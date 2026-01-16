@@ -149,9 +149,23 @@
       }
     },
     {
+      "@id": "portfolio:tracy-arndt",
+      "@type": "schema:Person",
+      "schema:name": "Tracy Arndt",
+      "schema:jobTitle": "Dozentin"
+    },
+    {
       "@id": "portfolio:th-wildau",
       "@type": "schema:EducationalOrganization",
-      "schema:name": "Technische Hochschule Wildau"
+      "schema:name": "Technische Hochschule Wildau",
+      "hasPart": {
+        "@id": "portfolio:wit"
+      }
+    },
+    {
+      "@id": "portfolio:wit",
+      "@type": "schema:EducationalOrganization",
+      "schema:name": "Wildau Institue of Technology"
     },
     {
       "@id": "portfolio:studiengang",
@@ -169,12 +183,6 @@
       "@type": "schema:Course",
       "schema:name": "Schnittstellen und Datenformate",
       "schema:courseCode": "SuD"
-    },
-    {
-      "@id": "portfolio:tracy-arndt",
-      "@type": "schema:Person",
-      "schema:name": "Tracy Arndt",
-      "schema:jobTitle": "Dozentin"
     },
     {
       "@id": "portfolio:daten",
@@ -271,6 +279,15 @@
       "@type": "schema:DefinedTerm",
       "schema:name": "SPARQL",
       "schema:description": "Abfragesprache für RDF und Linked Data",
+      "relatedTo": {
+        "@id": "portfolio:linked-data"
+      }
+    },
+    {
+      "@id": "portfolio:josnld",
+      "@type": "schema:DefinedTerm",
+      "schema:name": "JSONLD",
+      "schema:description": "Datenformat für Linked Data",
       "relatedTo": {
         "@id": "portfolio:linked-data"
       }
