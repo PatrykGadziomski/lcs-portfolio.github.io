@@ -24,6 +24,14 @@
       "title": "Tag 5 - 16.01.2025",
       "content": "<p>...</p>"
     },
+    "Aufgabe1": {
+      "title": "Aufgabe 1 - Datenworkflow",
+      "content": "..."
+    },
+    "Aufgabe2": {
+      "title": "Aufgabe 1 - Linked Data",
+      "content": "..."
+    },
     "schnittstellen_und_datenformate": {
       "title": "Schnittstellen und Datenformate",
       "content": "Schnittstellen und Datenformate..."
@@ -58,7 +66,8 @@
       { "id": "day3", "label": "Tag 3 - 03.12.2025" },
       { "id": "day4", "label": "Tag 4 - 04.12.2025" },
       { "id": "day5", "label": "Tag 5 - 16.01.2025" },
-      { "id": "test", "label": "Test" }
+      { "id": "aufgabe1", "label": "Aufgabe 1 - Linked Data" },
+      { "id": "aufgabe2", "label": "Aufgabe 2 - Linked Data " }
     ],
     "links": [
       { "source": "intro", "target": "bibliotheksinformatik" },
@@ -72,7 +81,9 @@
       { "source": "day2", "target": "schnittstellen_und_datenformate"},
       { "source": "day3", "target": "schnittstellen_und_datenformate"},
       { "source": "day4", "target": "schnittstellen_und_datenformate"},
-      { "source": "day5", "target": "schnittstellen_und_datenformate"}
+      { "source": "day5", "target": "schnittstellen_und_datenformate"},
+      { "source": "aufgabe1", "target": "schnittstellen_und_datenformate"},
+      { "source": "aufgabe2", "target": "schnittstellen_und_datenformate"}
     ]
   }
 }
