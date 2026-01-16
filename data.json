@@ -1,0 +1,53 @@
+{
+  "articles": {
+    "intro": {
+      "title": "Willkommen zu meinem Lernportfolio!",
+      "content": "<p>Dieses Portfolio dient der Dokumentation meiner Lernreise im Modul Schnittstellen und Datenformate im Studiengang Biliotheksinformatik an der Technischen Hochschule Wildau. Hier sammle ich Notizen und Erkenntnisse zu verschiedenen Themen.</p><h3>Über dieses Portfolio</h3><p>Das Besondere an diesem Lernportfolio ist die Integration eines Knowledge Graphs auf der rechten Seite. Der Graph visualisiert die Struktur und Beziehungen zwischen den verschiedenen Artikeln und Konzepten, ähnlich wie in Obsidian. (Keine Werbung! Aber eine sehr tolle Software ;))</p><p>Jeder Knoten repräsentiert eine Notiz, und die Verbindungen zeigen, wie die Themen miteinander zusammenhängen. Klicke auf einen Knoten im Graph, um direkt zum entsprechenden Artikel zu springen!</p><p>Der Aufbau dieses Lerportfolios ins in zeitlichen Abschnitten aufgeteilt, je nach den Terminen, an denen die Vorlesung stattfand. In diesen wird kurz zusammengefasst was an diesem Tag stattfand und was ich gelernt habe. Die Themen sind einzelne Notizen, auf welche dann verwiesen wird. Um das Prinzip von Knowledge Graph zu erfüllen, werden auch ein paar Notizen von Entitäten erstellt um das Thema 'Ontologie' nochal zu üben.</p>"
+    },
+    "day1": {
+      "title": "Tag 1 - 15.10.2025",
+      "content": "<p>Das war der dritte Tag im Studium Bibliotheksinformatik an der TH Wildau und der erste Tag im Modul Schnittstellen und Datenformate. Das Modul ist in zwei Teile aufgeteilt und fängt mit Datenformaten, gehalten von Tracy Arndt, an.</p><p>Die Vorlesung begann mit den typischen organisatorischen Inhalten und der Vorstellung. Die Ziele des Teilmoduls wurden vorgestellt und auch die Blöcke in diesem Teilmodul. Was natürlich nicht fehlen durfte waren die Prüfungsleistungen und die dazugehörigen Bewertungsdimensionen.</p><p>Als erstes klärten wir was überhaupt Daten sind. Das war mich nichts neues, denn ich habe in meinem Bachelor einen Schwerpunkt auf Daten gesetzt. Was Metadaten sind war mir auch dadurch bereit klar. Mit was ich aber keine Erfahrung, oder Wissen habe, sind bibliothekarische Metadaten. Aber dazu später mehr.</p><p>Es folgte eine Gruppenarbeit in welche wir uns mit verschiedenen Begriffen auseinandersetzen sollte. Dazu wurden uns Quelle gegeben. Meine Gruppe und ich haben dazu eine Visualisierung entworfen. Die Ergebnisse wurden dann präsentiert. Es wurde rege diskutiert was genau das Datenmodell ist und was alles als Standard gesehen werden kann, bzw. so überall Standards auftreten können. Es war interessant zu sehen, das selbst Menschen, die täglich in dieser Thematik arbeiten, es schwer fällt alles genau zu beschreiben.</p><img src='imgs/datenformate.drawio.svg'><figcaption>Schema einer Datenbeschreibung</figcaption>"
+    },
+    "day2": {
+      "title": "Tag 2 - 17.10.2025",
+      "content": "<p>An diesem Tag gingen wir tiefer in die Materie der Metadaten rein und begannen mit der Geschichte von PICA und MARC. Das Thema fand ich persönlich nicht unbedingt interessant, aber es war dennoch interessant zu sehen, wann diese entstanden sind und wie sich die Anforderungen an Metadatenformate gewandelt haben.</p><p>Das größte Thema dieses Tage was die Metadatenorganisation. Ein hochspannendes Thema, welches, finde ich persönlich, hochkompliziert werden kann. Allein, dass es Austauschformate geben muss, da es so viele unterschiedliche Metadatenformate gibt, macht das Thema kompliziert. Mein Gedanke: Wieso kann es nicht ein Datenformat/Metadatenformat für alles geben? Aber das ist klar: Man kann nie alles abbilden und selbst, wenn man so ein Format immer weiter erweitern würde, so würde es so viele Felder beinhalten, dass es allein aus Speichergründen nicht benutzt werden würde. Hier geht es vielmehr um die Aufgabenspezifische Benutzung. Es ist zwar eine schöne Vorstellung ein 'Omni'-Datenformat/Metadatenformat zu entwickeln, aber auch eine unmögliche.</p><p>Das FRBR Modell war mir bereit aus dem Bachelor bekannt gewesen. Ich wusste aber gar nicht, dass es mehrere Varianten gibt bzw. es weiterentwickelt wurde. Das FRBR-LRM hat mich sehr überrascht. Da es aber ein sehr theoretisches Modell ist, entsteht für mich persönlich wieder das gleiche Problem, dass man damit nicht alles abbilden kann und dass man sich ewig darüber streiten kann.</p><p>Dann kam das unglaublich tolle Thema: Linked (Open) Data. Ich hatte in Vergangenheit im rahmen meines Studiums damit Kontakt, weil mein Professor sich damit beschäftigte, aber konnte mir nie was darunter vorstellen. Für mich war es wieder eine sehr theoretische Vorstellung. Aber endlich habe ich es verstanden! Es ist ein Knowledge Graph! Bzw. ein Knowledge Graph entsteht durch das verbinden von Daten (Nodes). Das ist dann Linked Data! Da ich privat Obsidian benutze, um meine Notizen, etc. zu organisieren, war mir dieses Prinzip sehr gut bekannt, aber endlich habe ich es komplett verstanden und die einzelnen Knoten in meinen Kopf zum Thema Linked Data haben sich endlich 'verbunden' (XD).</p><p>Sehr interessant war auch die Tatsache, dass Linked Data besser für das Training oder Benutzung von KI Modellen wie LLMs sind. Das passt sehr gut zu meinem Projekt.</p>"
+    },
+    "day3": {
+      "title": "Tag 3 - 03.12.2025",
+      "content": "<p>An diesem Tag, habe ich endlich verstanden wie man Ontologien aufbaut! Bisher dachte ich immer, dass es ganz große textuelle Bäume sind, die sehr komplex aufgebaut sind. Das trifft so gesehen zu, aber auch nicht. Ontologien lassen sich darstellen das, was ich sowieso fast jeden tag gemacht habe, bzw. für mein privates Leben viel tue. Man erstellt Beschreibungen von Objekten und Beziehungen zu anderen Objekten, in Form eines Knowledge Graphs. Das war fast schon wie eine Erleuchtung für mich. Anhand dieser Ontologien, kann man Objekte beschreiben. Dafür gibt es dann verschiedenen Standards. Das war ein großer Lerneffekt und ein noch größerer Aha-Moment.</p>"
+    },
+    "day4": {
+      "title": "Tag 4 - 04.12.2025",
+      "content": "<p>Der SPARQL Tag. Das war für mich sehr viel SPARQL, was erstmal verarbeitet werden musste. Was sich mir noch nicht ganz erschlossen hat, ist, für was man SPARQL in der Praxis alles nutzen kann. Aber dafür muss ich die Folien nochmal durchgehen.</p>"
+    },
+    "day5": {
+      "title": "Tag 5 - 16.01.2025",
+      "content": "<p>...</p>"
+    },
+    "bibliotheksinformatik": {
+      "title": "Bibliotheksinformatik",
+      "content": "Bibliotheksinformatik Informationen..."
+    },
+    "patrykgadziomski": {
+      "title": "Patryk Gadziomski",
+      "content": "Ich"
+    }
+  },
+  "graphData": {
+    "nodes": [
+      { "id": "intro", "label": "Einführung" },
+      { "id": "bibliotheksinformatik", "label": "Bibliotheksinformatik" },
+      { "id": "patrykgadziomski", "label": "Patryk Gadziomski" },
+      { "id": "day1", "label": "Tag 1 - 15.10.2025" },
+      { "id": "day2", "label": "Tag 2 - 17.10.2025" },
+      { "id": "day3", "label": "Tag 3 - 03.12.2025" },
+      { "id": "day4", "label": "Tag 4 - 04.12.2025" },
+      { "id": "day5", "label": "Tag 5 - 16.01.2025" }
+    ],
+    "links": [
+      { "source": "intro", "target": "bibliotheksinformatik" },
+      { "source": "bibliotheksinformatik", "target": "intro" },
+      {"source": "patrykgadziomski", "target": "intro"}
+    ]
+  }
+}

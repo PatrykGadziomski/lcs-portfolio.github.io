@@ -49,7 +49,7 @@
         .main-content {
             width: 60%;
             padding: 40px;
-            overflow-y: auto;
+            /* overflow-y: auto; */
         }
 
         h1 {
@@ -207,10 +207,10 @@
             <div class="profile">
                 <h2>Über mich</h2>
                 <div class="profile-info">
-                    <p><strong>Name:</strong> Max Mustermann</p>
-                    <p><strong>Studium:</strong> Informatik</p>
-                    <p><strong>Semester:</strong> 5</p>
-                    <p><strong>Universität:</strong> TU Berlin</p>
+                    <p><strong>Name:</strong> Patryk Gadziomski</p>
+                    <p><strong>Studium:</strong> Bibliotheksinformatik</p>
+                    <p><strong>Semester:</strong> 1</p>
+                    <p><strong>Hochschule:</strong> TH Wildau</p>
                 </div>
             </div>
 
@@ -218,11 +218,13 @@
                 <h2>Artikelverzeichnis</h2>
                 <ul class="article-list">
                     <li><a href="#" data-article="intro" class="active">Einführung</a></li>
-                    <li><a href="#" data-article="semantic-web">Semantic Web</a></li>
-                    <li><a href="#" data-article="linked-data">Linked Data</a></li>
-                    <li><a href="#" data-article="rdf">RDF Grundlagen</a></li>
-                    <li><a href="#" data-article="knowledge-graphs">Knowledge Graphs</a></li>
-                    <li><a href="#" data-article="sparql">SPARQL Queries</a></li>
+                    <li><a href="#" data-article="bibliotheksinformatik">Bibliotheksinformatik</a></li>
+                    <li><a href="#" data-article="patrykgadziomski">Patryk Gadziomski</a></li>
+                    <li><a href="#" data-article="day1">Tag 1 - 15.10.2025</a></li>
+                    <li><a href="#" data-article="day2">Tag 2 - 17.10.2025</a></li>
+                    <li><a href="#" data-article="day3">Tag 3 - 03.12.2025</a></li>
+                    <li><a href="#" data-article="day4">Tag 4 - 04.12.2025</a></li>
+                    <li><a href="#" data-article="day5">Tag 5 - 16.01.2025</a></li>
                 </ul>
             </div>
         </aside>
@@ -247,93 +249,47 @@
     </div>
 
     <script>
-        // Artikel-Inhalte
-        const articles = {
-            intro: {
-                title: "Willkommen zu meinem Lernportfolio",
-                content: `
-                    <p>Dieses Portfolio dokumentiert meine Lernreise im Bereich Semantic Web und Linked Data. Hier sammle ich Artikel, Notizen und Erkenntnisse zu verschiedenen Themen.</p>
-                    <h3>Über dieses Portfolio</h3>
-                    <p>Das Besondere an diesem Lernportfolio ist die Integration eines Knowledge Graphs auf der rechten Seite. Der Graph visualisiert die Struktur und Beziehungen zwischen den verschiedenen Artikeln und Konzepten, ähnlich wie in Obsidian.</p>
-                    <p>Jeder Knoten repräsentiert einen Artikel, und die Verbindungen zeigen, wie die Themen miteinander zusammenhängen. Klicke auf einen Knoten im Graph, um direkt zum entsprechenden Artikel zu springen!</p>
-                `
-            },
-            "semantic-web": {
-                title: "Semantic Web",
-                content: `
-                    <p>Das Semantic Web ist eine Erweiterung des World Wide Web, die es ermöglicht, Informationen so zu strukturieren, dass sie von Maschinen verstanden und verarbeitet werden können.</p>
-                    <h3>Hauptziele</h3>
-                    <p>Das Hauptziel ist es, Daten im Web maschinenlesbar zu machen und semantische Beziehungen zwischen Informationen herzustellen. Dies ermöglicht intelligentere Suchanfragen und automatisierte Schlussfolgerungen.</p>
-                    <h3>Technologien</h3>
-                    <p>Die wichtigsten Technologien sind RDF, OWL, SPARQL und verschiedene Ontologien, die zusammen ein Framework für strukturierte Daten bilden.</p>
-                `
-            },
-            "linked-data": {
-                title: "Linked Data",
-                content: `
-                    <p>Linked Data beschreibt eine Methode zum Veröffentlichen strukturierter Daten im Web, sodass sie miteinander verknüpft und maschinenlesbar werden.</p>
-                    <h3>Die vier Prinzipien</h3>
-                    <p>1. Verwende URIs als Namen für Dinge<br>
-                    2. Verwende HTTP-URIs, damit Menschen diese Namen nachschlagen können<br>
-                    3. Stelle nützliche Informationen bereit, wenn jemand eine URI nachschlägt<br>
-                    4. Füge Links zu anderen URIs hinzu, damit weitere Dinge entdeckt werden können</p>
-                `
-            },
-            "rdf": {
-                title: "RDF Grundlagen",
-                content: `
-                    <p>RDF (Resource Description Framework) ist ein Standard für die Beschreibung von Ressourcen im Web.</p>
-                    <h3>RDF-Tripel</h3>
-                    <p>RDF basiert auf dem Konzept von Tripeln: Subjekt - Prädikat - Objekt. Diese einfache Struktur ermöglicht es, komplexe Beziehungen zwischen Ressourcen auszudrücken.</p>
-                    <h3>Serialisierungsformate</h3>
-                    <p>RDF kann in verschiedenen Formaten serialisiert werden: RDF/XML, Turtle, N-Triples, JSON-LD und mehr.</p>
-                `
-            },
-            "knowledge-graphs": {
-                title: "Knowledge Graphs",
-                content: `
-                    <p>Ein Knowledge Graph ist eine Wissensdatenbank, die Informationen in Form eines Graphen speichert, wobei Entitäten als Knoten und ihre Beziehungen als Kanten dargestellt werden.</p>
-                    <h3>Anwendungen</h3>
-                    <p>Knowledge Graphs werden von Suchmaschinen, Empfehlungssystemen und KI-Anwendungen genutzt, um kontextbezogene und relevante Informationen bereitzustellen.</p>
-                    <h3>Visualisierung</h3>
-                    <p>Die Visualisierung von Knowledge Graphs hilft dabei, komplexe Beziehungen und Strukturen auf einen Blick zu erfassen - wie im rechten Bereich dieser Seite zu sehen.</p>
-                `
-            },
-            "sparql": {
-                title: "SPARQL Queries",
-                content: `
-                    <p>SPARQL ist eine Abfragesprache für RDF-Daten, ähnlich wie SQL für relationale Datenbanken.</p>
-                    <h3>Grundstruktur</h3>
-                    <p>Eine SPARQL-Abfrage besteht typischerweise aus SELECT, WHERE und optionalen Filtern. Sie ermöglicht es, komplexe Muster in RDF-Graphen zu finden.</p>
-                    <h3>Anwendungsfälle</h3>
-                    <p>Mit SPARQL können Sie Knowledge Graphs durchsuchen, Daten aus verschiedenen Quellen kombinieren und komplexe Beziehungen analysieren.</p>
-                `
-            }
-        };
-
-        // Knowledge Graph Daten - einfache Struktur
-        const graphData = {
-            nodes: [
-                { id: "intro", label: "Einführung" },
-                { id: "semantic-web", label: "Semantic Web" },
-                { id: "linked-data", label: "Linked Data" },
-                { id: "rdf", label: "RDF" },
-                { id: "knowledge-graphs", label: "Knowledge Graphs" },
-                { id: "sparql", label: "SPARQL" }
-            ],
-            links: [
-                { source: "intro", target: "semantic-web" },
-                { source: "intro", target: "linked-data" },
-                { source: "semantic-web", target: "rdf" },
-                { source: "semantic-web", target: "linked-data" },
-                { source: "linked-data", target: "rdf" },
-                { source: "rdf", target: "knowledge-graphs" },
-                { source: "rdf", target: "sparql" },
-                { source: "knowledge-graphs", target: "sparql" }
-            ]
-        };
-
+        // Daten werden aus JSON-Datei geladen
+        let articles = {};
+        let graphData = {};
         let currentArticle = 'intro';
+
+        // Daten aus JSON-Datei laden
+        async function loadData() {
+            try {
+                const response = await fetch('data.json');
+                const data = await response.json();
+                articles = data.articles;
+                graphData = data.graphData;
+                
+                // Nach dem Laden der Daten initialisieren
+                initializeApp();
+            } catch (error) {
+                console.error('Fehler beim Laden der Daten:', error);
+                // Fallback: Zeige Fehlermeldung
+                document.getElementById('article-content').innerHTML = `
+                    <h1>Fehler beim Laden</h1>
+                    <p>Die Datei data.json konnte nicht geladen werden. Bitte stelle sicher, dass sie im gleichen Verzeichnis liegt.</p>
+                `;
+            }
+        }
+
+        // App initialisieren nach dem Laden der Daten
+        function initializeApp() {
+            setupNavigation();
+            createKnowledgeGraph();
+            loadArticle('intro');
+        }
+
+        // Navigation einrichten
+        function setupNavigation() {
+            document.querySelectorAll('.article-list a').forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    loadArticle(e.target.dataset.article);
+                });
+            });
+        }
 
         // Navigation zwischen Artikeln
         function loadArticle(articleId) {
@@ -353,13 +309,6 @@
             // Graph aktualisieren
             updateGraphHighlight(articleId);
         }
-
-        document.querySelectorAll('.article-list a').forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                loadArticle(e.target.dataset.article);
-            });
-        });
 
         // Knowledge Graph Visualisierung
         function createKnowledgeGraph() {
@@ -465,8 +414,8 @@
             };
         }
 
-        // Graph beim Laden initialisieren
-        createKnowledgeGraph();
+        // Daten beim Laden der Seite laden
+        loadData();
     </script>
 </body>
 </html>
