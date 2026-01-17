@@ -1,0 +1,134 @@
+@prefix  bim: <https://wildat/wit/bim25#> .
+@prefix  bimo: <https://wildat/wit/bimo#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+bim:anja_jungbluth a bimo:Person .
+bim:anja_jungbluth bimo:has_lastname "Jungbluth" .
+
+bim:anja_jungbluth a bimo:Person ;
+
+      bimo:has_lastname "Jungbluth" ;
+
+      bimo:works_at<https://isil.staatsbibliothek-berlin.de/isil/DE-32> ;
+
+      bimo:knows bim:claus_werner, bim:elena_torlopova, bim:alex_karim .
+
+
+
+bim:claus_werner a bimo:Person ; 
+
+     bimo:has_lastname "Werner" ;
+
+    bimo:works_at <https://isil.staatsbibliothek-berlin.de/isil/DE-MUS-451314> ;
+
+    bimo:knows bim:anha_jungbluth , bim:patryk_gadziomski , bim:alex_karim , bim:kamil_jaworski , bim:beata_lakeberg , bim:elena_torlopova , bim:hiromi_ohshimo .
+
+
+bim:patryk_gadziomski a bimo:Person ;
+
+    bimo:has_lastname "Gadziomski" ;
+
+    bimo:works_at <https://www.izm.fraunhofer.de> ;
+
+    bimo:knows bim:elena_torlopova, bim:hiromi_ohshimo, bim:anja_jungbluth .
+
+
+bim:alex_karim a bimo:Person ;
+
+    bimo:has_lastname "Karim" ;
+
+    bimo:works_at <https://www.gbv.de/informationen/Verbundzentrale> ;
+
+    bimo:knows bim:klaus_prinz ;
+
+    bimo:knows bim:anja_jungbluth .
+
+
+
+bim:kamil_jaworski a bimo:Person ;
+
+     bimo:has_lastname "Jaworski" ;
+
+     bimo:works_at <https://isil.staatsbibliothek-berlin.de/isil/DE-281> ;
+
+    bimo:knows bim:alex_karim, bim:beata_lakeberg .
+
+
+
+bim:beata_lakeberg a bimo:Person ;
+
+    bimo:has_lastname "Lakeberg" ;
+
+    bimo:works_at <https://isil.staatsbibliothek-berlin.de/isil/DE-12> ;
+
+    bimo:knows bim:elena_torlopova , bim:alex_karim .
+
+
+
+bim:elena_torlopova a bimo:Person .
+bim:elena_torlopova rdf:type bimo:Person .
+bim:elena_torlopova bimo:has_lastname"Torlopova" ;
+
+    bimo:has_lastname"Torlopova" ;
+
+    bimo:works_at <https://isil.staatsbibliothek-berlin.de/isil/DE-Stg191> ;
+
+    bimo:knows bim:beata_lakeberg, bim:hiromi_ohshimo.
+
+
+
+bim:hiromi_ohshimo a bimo:Person ;
+                                       bimo:has_lastname "Ohshimo" ;
+                                       bimo:works_at<https://isil.staatsbibliothek-berlin.de/isil/DE-1> ;
+                                       bimo:knows bim:klaus_prinz, bim:elena_torlopova .
+
+
+bim:annabell_huwig a bimo:Person ;
+                                 bimo:has_lastname "Huwig" ;
+                                  bimo:works_at <https://isil.staatsbibliothek-berlin.de/isil/DE-295> ;
+                                  bimo:knows bim:beata_lakeberg,  bim:hiromi_ohshimo .
+
+
+bim:martina_schildt a bimo:Person ;
+
+    bimo:has_lastname "Schildt" ;
+
+    bimo:works_at <https://isil.staatsbibliothek-berlin.de/isil/DE-601> ;
+
+    bimo:knows bim:christin_seegert, bim:elena_torlopova, bim:beata_lakeberg, bim:kamil_jaworski .
+
+
+bim:christin_seegert a bimo:Person ;
+
+    bimo:has_lastname "Seegert" ;
+
+    bimo:works_at <https://isil.staatsbibliothek-berlin.de/isil/DE-601> ;
+
+    bimo:knows bim:klaus_prinz, bim:elena_torlopova, bim:martina_schildt, bim:anabell_huwig .
+
+
+bim:klaus_prinz a bimo:Person ;
+
+    bimo:has_lastname "Prinz" ;
+
+    bimo:works_at <https://isil.staatsbibliothek-berlin.de/isil/AT-OeNB> ;
+
+    bimo:knows bim:sebastian_scheruebl , bim:christin_seegert .
+
+
+
+
+bim:sebastian_scheruebl a bimo:Person ;
+
+    bimo:has_lastname "Scherübl" ; #auf Literal
+
+    bimo:works_at <https://isil.staatsbibliothek-berlin.de/isil/?isil=DE-91> ; # auf klasse 
+
+    bimo:knows bim:klaus_prinz, bim:christin_seegert, bim:martina_schildt .
+
+
+bim:tracy_arndt a bimo:Person ; # a ist eine kurzform für rdf:type
+                            bimo:has_lastname "Arndt" ;
+                            bimo:works_at <https://isil.staatsbibliothek-berlin.de/isil/DE-101a> ;
+                            bimo:knows bim:klaus_prinz, bim:martina .
+

@@ -1,0 +1,148 @@
+#################################################################
+###  Generated with the experimental alpha version of the TTL exporter of WebVOWL (version 1.1.7)  http://visualdataweb.de/webvowl/   ###
+#################################################################
+
+@prefix : 		<http://visualdataweb.org/newOntology/> .
+@prefix rdf: 		<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: 		<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: 		<http://www.w3.org/2002/07/owl#> .
+@prefix xsd: 		<http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: 		<http://purl.org/dc/elements/1.1/> .
+@prefix xml: 		<http://www.w3.org/XML/1998/namespace> .
+@prefix wot: 		<http://xmlns.com/wot/0.1/> .
+@prefix vs: 		<http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix foaf: 		<http://xmlns.com/foaf/0.1/> .
+@base 			<http://visualdataweb.org/newOntology/> .
+
+<http://visualdataweb.org/newOntology/> rdf:type owl:Ontology ;
+                                        dc:title "PG_ontology"@en;
+                                        dc:description "New ontology description"@en . 
+#################################################################
+
+###  Property Definitions (Number of Property) 22 ###
+#  --------------------------- Property 0------------------------- 
+:type_of_institution rdf:type owl:DatatypeProperty ;
+                     rdfs:label "type_of_institution"@en; 
+                     rdfs:domain :Insitution;
+                     rdfs:range xsd:string . 
+#  --------------------------- Property 1------------------------- 
+:name_of_institution rdf:type owl:DatatypeProperty ;
+                     rdfs:label "name_of_institution"@en; 
+                     rdfs:domain :Insitution;
+                     rdfs:range xsd:string . 
+#  --------------------------- Property 2------------------------- 
+:is_part_of rdf:type owl:ObjectProperty ;
+            rdfs:label "is_part_of"@en; 
+            rdfs:domain :Class22;
+            rdfs:range :Insitution . 
+#  --------------------------- Property 3------------------------- 
+:has_firstname rdf:type owl:DatatypeProperty ;
+               rdfs:label "has_firstname"@en; 
+               rdfs:domain :Class22;
+               rdfs:range xsd:string . 
+#  --------------------------- Property 4------------------------- 
+:has_lastnanem rdf:type owl:DatatypeProperty ;
+               rdfs:label "has_lastname"@en; 
+               rdfs:domain :Class22;
+               rdfs:range xsd:string . 
+#  --------------------------- Property 5------------------------- 
+:has_birthday rdf:type owl:DatatypeProperty ;
+              rdfs:label "has_birthday"@en; 
+              rdfs:domain :Class22;
+              rdfs:range xsd:string . 
+#  --------------------------- Property 6------------------------- 
+:has_role rdf:type owl:DatatypeProperty ;
+          rdfs:label "has_role"@en; 
+          rdfs:domain :Class22;
+          rdfs:range xsd:string . 
+#  --------------------------- Property 7------------------------- 
+:has_name rdf:type owl:DatatypeProperty ;
+          rdfs:label "has_name"@en; 
+          rdfs:domain :Lecture;
+          rdfs:range xsd:string . 
+#  --------------------------- Property 8------------------------- 
+:has_dependencies rdf:type owl:DatatypeProperty ;
+                  rdfs:label "has_dependencies"@en; 
+                  rdfs:domain :Lecture;
+                  rdfs:range xsd:boolean . 
+#  --------------------------- Property 9------------------------- 
+:is_hold_in rdf:type owl:ObjectProperty ;
+            rdfs:label "is_hold_in"@en; 
+            rdfs:domain :Lecture;
+            rdfs:range :Major . 
+#  --------------------------- Property 10------------------------- 
+:degree_programm_name rdf:type owl:DatatypeProperty ;
+                      rdfs:label "degree_programm_name"@en; 
+                      rdfs:domain :Major;
+                      rdfs:range xsd:string . 
+#  --------------------------- Property 11------------------------- 
+:offered_at rdf:type owl:ObjectProperty ;
+            rdfs:label "offered_at"@en; 
+            rdfs:domain :Major;
+            rdfs:range :Insitution . 
+#  --------------------------- Property 12------------------------- 
+:is_attending rdf:type owl:ObjectProperty ;
+              rdfs:label "is_attending"@en; 
+              rdfs:domain :Class22;
+              rdfs:range :Lecture . 
+#  --------------------------- Property 13------------------------- 
+:connection rdf:type owl:ObjectProperty ;
+            rdfs:label "registered"@en; 
+            rdfs:domain :Class22;
+            rdfs:range :Major . 
+#  --------------------------- Property 14------------------------- 
+:has_matrNumber rdf:type owl:DatatypeProperty ;
+                rdfs:label "has_matrNumber"@en; 
+                rdfs:domain :Class22;
+                rdfs:range xsd:integer . 
+#  --------------------------- Property 15------------------------- 
+:lecture_semester rdf:type owl:DatatypeProperty ;
+                  rdfs:label "lecture_semester"@en; 
+                  rdfs:domain :Major;
+                  rdfs:range xsd:integer . 
+#  --------------------------- Property 16------------------------- 
+:offering rdf:type owl:ObjectProperty ;
+          rdfs:label "offering"@en; 
+          rdfs:domain :Insitution;
+          rdfs:range :Major . 
+#  --------------------------- Property 17------------------------- 
+:has_email rdf:type owl:DatatypeProperty ;
+           rdfs:label "has_email"@en; 
+           rdfs:domain :Class22;
+           rdfs:range xsd:string . 
+#  --------------------------- Property 18------------------------- 
+:works_at rdf:type owl:ObjectProperty ;
+          rdfs:label "works_at"@en; 
+          rdfs:domain :Class22;
+          rdfs:range :Insitution . 
+#  --------------------------- Property 19------------------------- 
+:works_on rdf:type owl:ObjectProperty ;
+          rdfs:label "works_on"@en; 
+          rdfs:domain :Class22;
+          rdfs:range :Project . 
+#  --------------------------- Property 20------------------------- 
+:exam_part_of rdf:type owl:ObjectProperty ;
+              rdfs:label "exam_part_of"@en; 
+              rdfs:domain :Project;
+              rdfs:range :Lecture . 
+#  --------------------------- Property 21------------------------- 
+:has_project_name rdf:type owl:DatatypeProperty ;
+                  rdfs:label "has_project_name"@en; 
+                  rdfs:domain :Project;
+                  rdfs:range xsd:string . 
+###  Class Definitions (Number of Classes) 5 ###
+#  --------------------------- Class  0------------------------- 
+:Class22 rdf:type owl:Class; 
+         rdfs:label "Person"@en . 
+#  --------------------------- Class  1------------------------- 
+:Insitution rdf:type owl:Class; 
+            rdfs:label "Insitution"@en . 
+#  --------------------------- Class  2------------------------- 
+:Lecture rdf:type owl:Class; 
+         rdfs:label "Lecture"@en . 
+#  --------------------------- Class  3------------------------- 
+:Major rdf:type owl:Class; 
+       rdfs:label "Degree Program"@en . 
+#  --------------------------- Class  4------------------------- 
+:Project rdf:type owl:Class; 
+         rdfs:label "Project"@en . 

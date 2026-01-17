@@ -2,7 +2,6 @@
   "@context": {
     "schema": "https://schema.org/",
     "portfolio": "https://patrykgadziomski.github.io/lcs-portfolio.github.io#",
-    "discusses": "schema:about",
     "relatedTo": "schema:relatedLink",
     "hasPart": "schema:hasPart"
   },
@@ -17,7 +16,7 @@
       "schema:about": {
         "@id": "portfolio:modul"
       },
-      "schema:content": "<h2>Wilkommen auf meinem Lernportfolio!</h2></p><p>Dieses Portfolio dient der Dokumentation meiner Lernreise im Modul Schnittstellen und Datenformate im Studiengang Biliotheksinformatik an der Technischen Hochschule Wildau. Hier sammle ich Notizen und Erkenntnisse zu verschiedenen Themen aus dem Modul.</p><p>Das Besondere an diesem Lernportfolio ist die Integration eines Knowledge Graphs auf der rechten Seite. Der Graph visualisiert die Struktur und Beziehungen zwischen den verschiedenen Notizen, ähnlich wie in Obsidian (Keine Werbung! Aber eine sehr tolle Software ;)).</p><p>Jeder Knoten repräsentiert eine Notiz, und die Verbindungen zeigen, wie die Themen miteinander zusammenhängen. Klicke auf einen Knoten im Graph, um direkt zum entsprechenden Artikel zu springen!</p><p>Der Aufbau dieses Lerportfolios ist in zeitliche Abschnitte aufgeteilt, je nach den Terminen, an dennen die Vorlesungen stattfanden. In diesen wird kurz zusammengefasst was an diesen Tagen stattfand und was ich gelernt habe.</p<p>Bei der technischen Umsetzung dieses Lernportfolios wurden Claude (ANTHROPIC) und Euria (INFOMANIAK) eingesetzt um die Grundlegenden FUnktionalitäten zu generieren. Weitere Funktionen, Strukturierung und Datenkuration wurde durch den Entwickler durchgeführt. Der Text in idesem Portfolio wurde ohne Hilfe der Sprachmodelle erstellt.</p>"
+      "schema:content": "<h2>Wilkommen auf meinem Lernportfolio!</h2></p><p>Dieses Portfolio dient der Dokumentation meiner Lernreise im Modul Schnittstellen und Datenformate im Studiengang Biliotheksinformatik an der Technischen Hochschule Wildau. Hier sammle ich Notizen und Erkenntnisse zu verschiedenen Themen aus dem Modul.</p><p>Das Besondere an diesem Lernportfolio ist die Integration eines Knowledge Graphs auf der rechten Seite. Der Graph visualisiert die Struktur und Beziehungen zwischen den verschiedenen Notizen, ähnlich wie in Obsidian (Keine Werbung! Aber eine sehr tolle Software ;)).</p><p>Jeder Knoten repräsentiert eine Notiz, und die Verbindungen zeigen, wie die Themen miteinander zusammenhängen. Klicke auf einen Knoten im Graph, um direkt zum entsprechenden Artikel zu springen!</p><p>Der Aufbau dieses Lerportfolios ist in zeitliche Abschnitte aufgeteilt, je nach den Terminen, an dennen die Vorlesungen stattfanden. In diesen wird kurz zusammengefasst was an diesen Tagen stattfand und was ich gelernt habe.</p><p>Bei der technischen Umsetzung dieses Lernportfolios wurden Claude (ANTHROPIC) und Euria (INFOMANIAK) eingesetzt um die Grundlegenden FUnktionalitäten zu generieren. Weitere Funktionen, Strukturierung und Datenkuration wurde durch den Entwickler durchgeführt. Der Text in idesem Portfolio wurde ohne Hilfe der Sprachmodelle erstellt.</p>"
     },
     {
       "@id": "portfolio:vorlesung-1",
@@ -30,12 +29,20 @@
       "schema:organizer": {
         "@id": "portfolio:tracy-arndt"
       },
-      "discusses": [
-        {"@id": "portfolio:daten"},
-        {"@id": "portfolio:metadaten"},
-        {"@id": "portfolio:datenmodell"}
+      "schema:references": [
+        {"@id": "portfolio:datenformate-gbv"},
+        {"@id": "portfolio:handbuch-it-in-bibliotheken"},
+        {"@id": "portfolio:understanding-metadata"},
+        {"@id": "portfolio:kleines-handbuch-metadaten"},
+        {"@id": "portfolio:zugang-gestalten"},
+        {"@id": "portfolio:date-meme"},
+        {"@id": "portfolio:einführung-in-skos"},
+        {"@id": "portfolio:marc-for-bibliographic"},
+        {"@id": "portfolio:marc-dublin-core"},
+        {"@id": "portfolio:marc-21"},
+        {"@id": "portfolio:einführung-pica"}
       ],
-      "schema:content": "<p>Hierbei handelt es sich um den dritten Tag im Studium Bibliotheksinformatik an der TH Wildau und den ersten Tag im Modul Schnittstellen und Datenformate. Wir haben erfahren, dass das Modul in zwei Teile aufgeteilt ist und mit dem ersten Teil 'Datenformate' anfängt, gehalten von Tracy Arndt.</p><p>Die Vorlesung begann mit den typischen organisatorischen Inhalten und der Vorstellung. Die Ziele und Themen des Teilmoduls wurden vorgestellt. Was natürlich nicht fehlen durfte waren die Prüfungsleistungen und die dazugehörigen Bewertungsdimensionen.</p><p>Als erstes klärten wir was überhaupt Daten sind. Das war für mich nichts neues, denn ich habe in meinem Bachelor einen Schwerpunkt auf Daten gesetzt. Was Metadaten sind war mir auch dadurch bereits klar. Mit was ich aber keine Erfahrung, oder Wissen habe, sind bibliothekarische Metadaten. Aber dazu später mehr.</p><p>Es folgte eine Gruppenarbeit in welcher wir uns mit verschiedenen Begriffen auseinandersetzen sollte. Dazu wurden uns Quelle bereitgestellt. Meine Gruppe und ich haben dazu eine Visualisierung entworfen. Die Ergebnisse wurden dann präsentiert. Es wurde rege diskutiert was genau das Datenmodell ist und was alles als Standard gesehen werden kann, bzw. wo überall Standards auftreten können. Es war interessant zu sehen, das selbst Menschen, die täglich in dieser Thematik arbeiten, es schwer fällt alles genau zu beschreiben.</p><img src='imgs/datenformate.drawio.svg'><figcaption>Schema einer Datenbeschreibung</figcaption>"
+      "schema:content": "<p>Dies war der dritte Tag des Studiums der Bibliotheksinformatik an der TH Wildau, zugleich der erste Tag des Moduls „Schnittstellen und Datenformate”. Das Modul ist in zwei Teile aufgeteilt, wobei der erste Teil Datenformate behandelt, die von Tracy Arndt gelehrt werden.</p><br><p>Die Vorlesung begann mit den üblichen organisatorischen Inhalten und der Vorstellung. Anschließend wurden die Ziele des Teilmoduls sowie die einzelnen Blöcke vorgestellt. Der erste Block (Tag 1 und 2) befasst sich mit Terminologie, Heterogenität, Interoperabilität und Organisation. Natürlich durften auch die Prüfungsleistungen und die dazugehörigen Bewertungsdimensionen nicht fehlen. Das Lernportfolio als Prüfungsleistung finde ich persönlich sehr gut. Bereits im Bachelorstudium hatte ich oft diese Form der Prüfungsleistung. Das Schöne daran ist für mich die Freiheit, die man den Studierenden lässt, ihr Portfolio auf ihre ganz eigene Art zu erstellen. Außerdem bin ich der festen Überzeugung, dass man nur durch Reflexion des Gelernten merkt, ob man die Inhalte eines Moduls/eines Fachs verstanden hat. Manchmal führe ich selbst ein Lerntagebuch für Themen, die ich mir selbst beibringe, da ich mir dabei die Frage stellen muss, was ich überhaupt gelernt habe.</p><br><p>Zunächst klärten wir, was Daten überhaupt sind, also die Terminologie. Das war für mich nichts Neues, denn ich hatte in meinem Bachelor einen Schwerpunkt auf Daten gesetzt. Was Metadaten sind, war mir auch dadurch bereits klar. Bibliothekarische Metadaten waren mir jedoch nur zum Teil ein Begriff. Ich hatte zwar PICA und MARC im Studium, aber weder Bibframe noch Linked-Data-Formate. Linked Data finde ich äußerst interessant und möchte es überall dort verwenden, wo es möglich ist, um es wirklich zu verstehen und zu erfahren, wie es funktioniert. Wie sich zeigt, bekomme ich dazu auch die Gelegenheit (siehe Tag 4).</p><br><p>Im Anschluss daran folgte eine Gruppenarbeit, in der wir uns mit verschiedenen Begriffen auseinandersetzen sollten. Dazu wurden uns Quellen zur Verfügung gestellt. Meine Gruppe und ich entwarfen daraufhin eine Visualisierung. Die Ergebnisse wurden anschließend präsentiert. Es wurde rege darüber diskutiert, was genau das Datenmodell ist und ob bzw. wie überall Standards auftreten können. Es war interessant zu sehen, dass selbst Menschen, die täglich mit dieser Thematik arbeiten, Probleme damit haben, alles genau zu beschreiben. Das war für mich zum Teil ein „Aha“- und ein „Wow“-Moment. Früher dachte ich immer, dass man, sobald man in einem Bereich arbeitet, diesen komplett überblickt und versteht. Mittlerweile weiß ich es besser und auch, dass es eine ständige Lernreise ist. In der Gruppe haben wir viel diskutiert und die Abbildung komplett neu angefertigt.</p><br><img src='imgs/datenformate.drawio.svg' style='width: 100%;'><br><p>Spannend fand ich die Interoperabilität von Daten. Damit habe ich leider nicht viele Berührungspunkte, aber das möchte ich gerne ändern. Ich fand die Konvertierung zwischen Formaten schon immer spannend. Ein Skript zu schreiben, das ein Format in ein anderes konvertieren kann, hat etwas Beruhigendes. Dabei merke ich, dass ich statt vorhandener Software lieber eigene Skripte schreibe, was Vor- und Nachteile hat.</p><br><p>Vor allem das Thema, dass es so viele Standards gibt und man sich auf keinen einigen kann (aus mehreren Gründen), fand ich sehr spannend. Im Modul „Künstliche Intelligenz” bin ich dabei, einen Linked-Data-Datensatz aufzubauen (dazu später mehr) und ich hätte fast einen eigenen Standard entwickelt, weil ich dachte: „Ah, wieso nicht? Dann kann ich es genau an meine Wünsche anpassen!“ Am Ende habe ich mich doch für Standards entschieden, da sie alles beinhalteten, was ich brauchte; ich musste sie mir nur genauer anschauen.</p><br><p>In meinem Alltag kann ich durchaus behaupten, dass ich viel mit Daten zu tun habe. Das sollte jeder behaupten können, da wir von Daten umgeben sind. Im beruflichen Kontext habe ich nur mit ISBD und MARC zu tun, da ich in meiner Bibliothek die Katalogisierung mit Koha durchführe. In meiner anderen Tätigkeit bin ich mit Webentwicklung beschäftigt, weshalb ich auch mit Datenformaten umgehen können muss. Das war mir bereits aus dem Bachelorstudium bekannt. Dieser erste Tag war für mich somit eine nette Auffrischung, aber ich habe nicht viel Neues gelernt.</p>"
     },
     {
       "@id": "portfolio:vorlesung-2",
@@ -51,15 +58,17 @@
       "schema:previousItem": {
         "@id": "portfolio:vorlesung-1"
       },
-      "discusses": [
-        {"@id": "portfolio:pica"},
-        {"@id": "portfolio:marc"},
-        {"@id": "portfolio:metadaten"},
-        {"@id": "portfolio:frbr"},
-        {"@id": "portfolio:frbr-lrm"},
-        {"@id": "portfolio:linked-data"}
+      "schema:references": [
+        {"@id": "portfolio:einführung-pica"},
+        {"@id": "portfolio:processing-marc-21"},
+        {"@id": "portfolio:marc-must-die"},
+        {"@id": "portfolio:marc-history-implications"},
+        {"@id": "portfolio:handbuch-it-in-bibliotheken"},
+        {"@id": "portfolio:library-reference-model"},
+        {"@id": "portfolio:link-data-in-libraries"},
+        {"@id": "portfolio:semantic-web"}
       ],
-      "schema:content": "<p>An diesem Tag gingen wir tiefer in die Materie der Metadaten rein und begannen mit der Geschichte von PICA und MARC. Das Thema fand ich persönlich nicht unbedingt interessant, aber es war dennoch interessant zu sehen, wann diese entstanden sind und wie sich die Anforderungen an Metadatenformate gewandelt haben.</p><p>Das größte Thema dieses Tage was die Metadatenorganisation. Ein hochspannendes Thema, welches, finde ich persönlich, hochkompliziert werden kann. Allein, dass es Austauschformate geben muss, da es so viele unterschiedliche Metadatenformate gibt, macht das Thema kompliziert. Mein Gedanke: Wieso kann es nicht ein Datenformat/Metadatenformat für alles geben? Aber das ist klar: Man kann nie alles abbilden und selbst, wenn man so ein Format immer weiter erweitern würde, so würde es so viele Felder beinhalten, dass es allein aus Speichergründen nicht benutzt werden würde. Hier geht es vielmehr um die Aufgabenspezifische Benutzung. Es ist zwar eine schöne Vorstellung ein 'Omni'-Datenformat/Metadatenformat zu entwickeln, aber auch eine unmögliche.</p><p>Das FRBR Modell war mir bereit aus dem Bachelor bekannt gewesen. Ich wusste aber gar nicht, dass es mehrere Varianten gibt bzw. es weiterentwickelt wurde. Das FRBR-LRM hat mich sehr überrascht. Da es aber ein sehr theoretisches Modell ist, entsteht für mich persönlich wieder das gleiche Problem, dass man damit nicht alles abbilden kann und dass man sich ewig darüber streiten kann.</p><p>Dann kam das unglaublich tolle Thema: Linked (Open) Data. Ich hatte in Vergangenheit im rahmen meines Studiums damit Kontakt, weil mein Professor sich damit beschäftigte, aber konnte mir nie was darunter vorstellen. Für mich war es wieder eine sehr theoretische Vorstellung. Aber endlich habe ich es verstanden! Es ist ein Knowledge Graph! Bzw. ein Knowledge Graph entsteht durch das verbinden von Daten (Nodes). Das ist dann Linked Data! Da ich privat Obsidian benutze, um meine Notizen, etc. zu organisieren, war mir dieses Prinzip sehr gut bekannt, aber endlich habe ich es komplett verstanden und die einzelnen Knoten in meinen Kopf zum Thema Linked Data haben sich endlich 'verbunden' (XD).</p><p>Sehr interessant war auch die Tatsache, dass Linked Data besser für das Training oder Benutzung von KI Modellen wie LLMs sind. Das passt sehr gut zu meinem Projekt.</p>"
+      "schema:content": "<p>An diesem Tag gingen wir tiefer in die Materie der Metadaten ein und begannen mit der Geschichte von PICA und MARC. Das Thema fand ich persönlich nicht besonders interessant, aber es war dennoch spannend zu sehen, wann diese entstanden sind und wie sich die Anforderungen an Metadatenformate gewandelt haben. Ich merke, dass mein Interesse eher der Verwendung der Daten bzw. Datenformate gilt als ihrer Geschichte.</p><p>Das größte Thema dieses Tages war die Metadatenorganisation. Ein hochspannendes Thema, das, finde ich, sehr kompliziert werden kann. Allein die Tatsache, dass es Austauschformate geben muss, da es so viele unterschiedliche Metadatenformate gibt, macht das Thema kompliziert. Ich habe mich gefragt, wieso es nicht ein Datenformat/Metadatenformat für alles geben kann. Aber das ist klar: Man kann nie alles abbilden. Selbst wenn man ein solches Format immer weiter erweitern würde, würde es so viele Felder beinhalten, dass es allein aus Speichergründen nicht benutzt werden könnte. Hier geht es vielmehr um die aufgabenspezifische Benutzung. Es ist zwar eine schöne Vorstellung, ein „Omni“-Datenformat/Metadatenformat zu entwickeln, aber auch eine unmögliche.</p><br><p>Was man hierbei wunderbar sehen kann: Metadaten gibt es überall. Egal, in welchem Bereich man arbeitet, kommt man immer mit ihnen in Kontakt, auch wenn man es vielleicht nicht weiß. Für mich wurde auch noch einmal klar, wo überall Metadaten vorkommen. Überall! In jedem Datenfluss kommen Daten und Metadaten vor. Ich habe mir in diesem Zusammenhang meine alten Arbeiten aus dem Bachelorstudium noch einmal angeschaut und gemerkt, an wie vielen Stellen das eigentlich der Fall war, ich aber nicht so sehr darauf eingegangen bin (oder gar nicht). Jetzt hätte ich nur gerne die Zeit, alles noch einmal durchzugehen und abzuändern.</p><br><p>Das FRBR-Modell war mir bereits aus dem Bachelor bekannt. Ich wusste jedoch nicht, dass es mehrere Varianten gibt bzw. dass es weiterentwickelt wurde. Das FRBR-LRM hat mich sehr überrascht. Da es sich aber um ein sehr theoretisches Modell handelt, entsteht für mich persönlich wieder das gleiche Problem, dass sich damit nicht alles abbilden lässt und man sich ewig darüber streiten kann.</p><br><p>Danach kam das unglaublich tolle Thema „Linked (Open) Data”. Ich hatte im Rahmen meines Studiums bereits damit zu tun, da sich mein Professor damit beschäftigte, aber ich konnte mir darunter nie etwas vorstellen. Für mich war es wieder eine sehr theoretische Vorstellung. Das Web, in dem Daten als Knoten definiert sind, die wiederum Verbindungen zu anderen Knoten und somit zu anderen Daten darstellen. Theoretisch war es mir klar, aber ich konnte mir beim besten Willen nicht vorstellen, wie es in der Praxis benutzt werden sollte (ohne zu wissen, dass ich es selbst seit Jahren benutze ...). Aber endlich habe ich es verstanden! Es ist ein Knowledge Graph! Ein Knowledge Graph entsteht also durch das Verbinden von Daten (Nodes). Das ist dann Linked Data! Ich finde die Idee, dass das Web im Web-3.0-Modell komplett aus Daten besteht, die aufeinander verweisen und somit verbunden sind, unglaublich schön. Allein die Möglichkeit, semantische Anfragen zu stellen, um genau die Daten zu finden, die man braucht, ist für die Suche und somit für Suchmaschinen enorm wichtig. Leider wurde das durch das Aufkommen der großen Sprachmodelle verhindert. bzw. gebremst. Ich stelle mir ein perfektes Modell vielmehr als eine Verbindung von beiden Dingen vor. Das Semantic Web könnte eine unglaubliche Daten- und Informationsquelle darstellen, auf die KI-Agenten zugreifen könnten. Ich habe dazu einmal eine Abbildung gesehen, finde diese aber leider nicht mehr. Ich habe es mit ChatGPT und DALL-E versucht zu visualisieren.</p><br><img src='imgs/web3andAI.png' style='width: 100%;'><br><p>Jetzt: Warum denke ich, dass ich Linked Data bereits seit Jahren benutze?</p><br><p>Ich benutze seit Jahren Obsidian, um meine Notizen zu erstellen und zu verwalten. Die Software erlaubt es, Verbindungen zwischen Notizen zu erstellen. Somit war mir dieses Prinzip, Informationen zu verbinden, bereits sehr gut bekannt. Aber endlich habe ich es vollständig verstanden und die einzelnen Knoten in meinem Kopf zum Thema Linked Data haben sich endlich „verbunden” (XD). Ich habe meine Notizen die ganze Zeit wie Linked Data behandelt, ohne es zu wissen. Seitdem benutze ich Standards wie Schema, Dublin Core und Friend of a Friend, um meine Daten noch besser zu strukturieren und zu verknüpfen. Wieso? Im Modul „Künstliche Intelligenz” bearbeite ich mit einer Kommilitonin ein Projekt zum Thema „RAG”. Dafür erstelle ich, wie bereits gesagt, einen Linked-Data-Datensatz. Die Idee ist es, am Ende ein RAG-System zu haben, mit dem man im Obsidian Vault suchen bzw. dem RAG-System Fragen stellen kann. Sehr interessant war auch die Tatsache, dass Linked Data besser für das Training oder die Benutzung von KI-Modellen wie LLMs geeignet ist. Das passt sehr gut zu unserem Projekt. Wenn es für das Projekt gut funktioniert, werde ich es für meinen privaten Vault nutzen und kann somit mit „mir selbst reden”, da dieser viele Informationen aus meinem Leben beinhaltet. (Der Datenschutz muss allerdings noch beachtet werden, denn ich möchte nicht, dass meine Daten am Ende in irgendein LLM geworfen werden.)</p>"
     },
     {
       "@id": "portfolio:vorlesung-3",
@@ -75,11 +84,13 @@
       "schema:previousItem": {
         "@id": "portfolio:vorlesung-2"
       },
-      "discusses": [
-        {"@id": "portfolio:ontologie"},
-        {"@id": "portfolio:knowledge-graph"}
+      "schema:references": [
+        {"@id": "portfolio:semantic-web"},
+        {"@id": "portfolio:w3c-standards-and-drafts"},
+        {"@id": "portfolio:semantic-web-working-ontologist"},
+        {"@id": "portfolio:validating-rdf-data"}
       ],
-      "schema:content": "<p>An diesem Tag, habe ich endlich verstanden wie man Ontologien aufbaut! Bisher dachte ich immer, dass es ganz große textuelle Bäume sind, die sehr komplex aufgebaut sind. Das trifft so gesehen zu, aber auch nicht. Ontologien lassen sich darstellen das, was ich sowieso fast jeden tag gemacht habe, bzw. für mein privates Leben viel tue. Man erstellt Beschreibungen von Objekten und Beziehungen zu anderen Objekten, in Form eines Knowledge Graphs. Das war fast schon wie eine Erleuchtung für mich. Anhand dieser Ontologien, kann man Objekte beschreiben. Dafür gibt es dann verschiedenen Standards. Das war ein großer Lerneffekt und ein noch größerer Aha-Moment.</p>"
+      "schema:content": "<p>Das Thema „Linked Data” bzw. „Semantic Web” wurde an diesem Tag weiter vertieft. Und man kann durchaus behaupten, dass meine Lernkurve in diesem Bereich exponentiell war.</p><br><p>An diesem Tag habe ich endlich verstanden, wie man Ontologien aufbaut und RDF-Standards benutzt. (Zwar habe ich damit zuvor bereits etwas experimentiert, doch durch die Übung, die wir während der Vorlesung gemacht haben, wurde alles viel klarer.) Bisher dachte ich immer, dass Ontologien sehr komplexe, textuelle Bäume sind. Das trifft so gesehen zu, aber auch wieder nicht.</p><br><p>PS: Vor dem Master habe ich mir Jobs im Bereich der Ontologien angeschaut und dachte, dass sie zwar interessant klingen, ich es aber bestimmt nicht hinbekomme, weil mir das Wissen fehlt. Jetzt weiß ich: Mir hat das Wissen gefehlt, aber die Praxis war da. Ich wusste nur nicht, dass das, was ich in Obsidian erstellt habe, Ontologien waren.</p><br><p>Ontologien lassen sich als das darstellen, was ich sowieso fast jeden Tag gemacht habe bzw. für mein privates Leben viel tue. Man erstellt Beschreibungen von Objekten und deren Beziehungen zueinander in Form eines Knowledge Graphs. Das war wie eine Erleuchtung für mich. Anhand dieser Ontologien kann man Objekte beschreiben. Dafür gibt es verschiedene Standards. Das war ein großer Lerneffekt und ein noch größerer „Aha“-Moment. Vor allem durch das Üben mit WebVOWL wurde mir klar, wie Ontologien aussehen können.</p><br><p>Zwei Übungen wurden durchgeführt, welche mir unglaublich viel gebrach haben: <a href='data/PG_Ontology.ttl'>Eigene Ontologie</a> und <a href='data/bim25graph.ttl'>BIM25 Ontologie</a>.</p><br><p>Neben diesem Thema wurde SPARQL kurz angesprochen, das aber am nächsten Tag genauer behandelt wird.</p><br><p>Sehr schöne Ressourcen die genannt wurden will ich hier nochmal verewigen: <ul style='padding-left: 15px;'><li><a href='https://www.ldf.fi/service/rdf-grapher' target='_blank'>RDF Grapher</a></li><li><a href='https://issemantic.net/rdf-visualizer' target='_blank'>Visualize RDF graph linked data as a connected diagram</a></li><li><a href='https://issemantic.net/rdf-converter' target='_blank'>Online RDF converter and validator to JSON-LD, Microdata, Turtle, TriG, RDF-star or any other serialization format</a></li><li><a href='http://ttl.summerofcode.be/' target='_blank'>IDLab Turtle Validator</a></li></ul></p>"
     },
     {
       "@id": "portfolio:vorlesung-4",
@@ -95,9 +106,6 @@
       "schema:previousItem": {
         "@id": "portfolio:vorlesung-3"
       },
-      "discusses": [
-        {"@id": "portfolio:sparql"}
-      ],
       "schema:content": "<p>Der SPARQL Tag. Das war für mich sehr viel SPARQL, was erstmal verarbeitet werden musste. Was sich mir noch nicht ganz erschlossen hat, ist, für was man SPARQL in der Praxis alles nutzen kann. Aber dafür muss ich die Folien nochmal durchgehen.</p>"
     },
     {
@@ -132,9 +140,6 @@
       "schema:educationalLevel": "Master",
       "schema:courseCode": {
         "@id": "portfolio:modul"
-      },
-      "discusses": {
-        "@id": "portfolio:linked-data"
       }
     },
     {
@@ -185,112 +190,144 @@
       "schema:courseCode": "SuD"
     },
     {
-      "@id": "portfolio:daten",
-      "@type": "schema:DefinedTerm",
-      "schema:name": "Daten",
-      "schema:description": "Grundlegendes Konzept von Daten"
+      "@id": "portfolio:datenformate-gbv",
+      "@type": "schema:CreativeWork",
+      "schema:name": "Datenformate GBV",
+      "schema:url": "https://format.gbv.de/",
+      "schema:inLanguage": "de"
     },
     {
-      "@id": "portfolio:metadaten",
-      "@type": "schema:DefinedTerm",
-      "schema:name": "Metadaten",
-      "schema:description": "Daten über Daten, insbesondere bibliothekarische Metadaten",
-      "relatedTo": {
-        "@id": "portfolio:daten"
-      }
+      "@id": "portfolio:handbuch-it-in-bibliotheken",
+      "@type": "schema:CreativeWork",
+      "schema:name": "Handbuch IT in Bibliotheken",
+      "schema:url": "https://it-in-bibliotheken.de/contributors.html",
+      "schema:inLanguage": "de"
     },
     {
-      "@id": "portfolio:datenmodell",
-      "@type": "schema:DefinedTerm",
-      "schema:name": "Datenmodell",
-      "schema:description": "Abstrakte Darstellung von Datenstrukturen",
-      "relatedTo": {
-        "@id": "portfolio:daten"
-      }
+      "@id": "portfolio:understanding-metadata",
+      "@type": "schema:CreativeWork",
+      "schema:name": "Understanding Metadata: What is Metadata, and What is it For?",
+      "schema:url": "https://www.niso.org/publications/understanding-metadata-2017",
+      "schema:inLanguage": "en"
     },
     {
-      "@id": "portfolio:pica",
-      "@type": "schema:DefinedTerm",
-      "schema:name": "PICA",
-      "schema:description": "Historisches Metadatenformat",
-      "relatedTo": {
-        "@id": "portfolio:metadaten"
-      }
+      "@id": "portfolio:kleines-handbuch-metadaten",
+      "@type": "schema:CreativeWork",
+      "schema:name": "Kleines Handbuch Metadaten",
+      "schema:url": "https://www.yumpu.com/de/document/view/23832049/kleines-handbuch-metadaten",
+      "schema:inLanguage": "de"
     },
     {
-      "@id": "portfolio:marc",
-      "@type": "schema:DefinedTerm",
-      "schema:name": "MARC",
-      "schema:description": "Machine-Readable Cataloging Format",
-      "relatedTo": {
-        "@id": "portfolio:metadaten"
-      }
+      "@id": "portfolio:zugang-gestalten",
+      "@type": "schema:CreativeWork",
+      "schema:name": "Zugang gestalten - Eine Anleitung für schlechte Standards",
+      "schema:url": "https://www.youtube.com/watch?v=o51FOLsh4Ec",
+      "schema:inLanguage": "de"
     },
     {
-      "@id": "portfolio:frbr",
-      "@type": "schema:DefinedTerm",
-      "schema:name": "FRBR",
-      "schema:description": "Functional Requirements for Bibliographic Records",
-      "relatedTo": [
-        {"@id": "portfolio:metadaten"},
-        {"@id": "portfolio:datenmodell"}
-      ]
+      "@id": "portfolio:date-meme",
+      "@type": "schema:CreativeWork",
+      "schema:name": "Date Meme",
+      "schema:url": "https://github.com/SamAmco/track-and-graph/issues/197#issuecomment-1445226139",
+      "schema:inLanguage": "en"
     },
     {
-      "@id": "portfolio:frbr-lrm",
-      "@type": "schema:DefinedTerm",
-      "schema:name": "FRBR-LRM",
-      "schema:description": "Weiterentwicklung des FRBR Modells",
-      "relatedTo": {
-        "@id": "portfolio:frbr"
-      }
+      "@id": "portfolio:einführung-in-skos",
+      "@type": "schema:CreativeWork",
+      "schema:name": "Einführung in SKOS am Beispiel von Open Educational Resources (OER)",
+      "schema:url": "https://dini-ag-kim.github.io/skos-einfuehrung/#/",
+      "schema:inLanguage": "de"
     },
     {
-      "@id": "portfolio:linked-data",
-      "@type": "schema:DefinedTerm",
-      "schema:name": "Linked (Open) Data",
-      "schema:description": "Prinzip der Verknüpfung von Daten über das Web, ermöglicht Knowledge Graphs",
-      "relatedTo": [
-        {"@id": "portfolio:knowledge-graph"},
-        {"@id": "portfolio:daten"}
-      ]
+      "@id": "portfolio:marc-for-bibliographic",
+      "@type": "schema:CreativeWork",
+      "schema:name": "Marc 21 Format for bibliographic data",
+      "schema:url": "https://www.loc.gov/marc/bibliographic/",
+      "schema:inLanguage": "en"
     },
     {
-      "@id": "portfolio:knowledge-graph",
-      "@type": "schema:DefinedTerm",
-      "schema:name": "Knowledge Graph",
-      "schema:description": "Wissensnetzwerk aus verbundenen Knoten und Beziehungen, ähnlich wie in Obsidian",
-      "relatedTo": {
-        "@id": "portfolio:linked-data"
-      }
+      "@id": "portfolio:marc-dublin-core",
+      "@type": "schema:CreativeWork",
+      "schema:name": "Marc to Dublin Core Crosswalk",
+      "schema:url": "https://www.loc.gov/marc/marc2dc.html",
+      "schema:inLanguage": "en"
     },
     {
-      "@id": "portfolio:ontologie",
-      "@type": "schema:DefinedTerm",
-      "schema:name": "Ontologie",
-      "schema:description": "Formale Beschreibung von Objekten und deren Beziehungen als Knowledge Graph",
-      "relatedTo": [
-        {"@id": "portfolio:knowledge-graph"},
-        {"@id": "portfolio:datenmodell"}
-      ]
+      "@id": "portfolio:marc-21",
+      "@type": "schema:CreativeWork",
+      "schema:name": "Marc 21",
+      "schema:url": "https://www.dnb.de/DE/Professionell/Metadatendienste/Exportformate/MARC21/marc21_node.html",
+      "schema:inLanguage": "de"
     },
     {
-      "@id": "portfolio:sparql",
-      "@type": "schema:DefinedTerm",
-      "schema:name": "SPARQL",
-      "schema:description": "Abfragesprache für RDF und Linked Data",
-      "relatedTo": {
-        "@id": "portfolio:linked-data"
-      }
+      "@id": "portfolio:einführung-pica",
+      "@type": "schema:CreativeWork",
+      "schema:name": "EInführung in die Verarbeitung von PICA-Daten",
+      "schema:url": "https://pro4bib.github.io/pica/#/",
+      "schema:inLanguage": "de"
     },
     {
-      "@id": "portfolio:josnld",
-      "@type": "schema:DefinedTerm",
-      "schema:name": "JSONLD",
-      "schema:description": "Datenformat für Linked Data",
-      "relatedTo": {
-        "@id": "portfolio:linked-data"
-      }
+      "@id": "portfolio:processing-marc-21",
+      "@type": "schema:CreativeWork",
+      "schema:name": "Processing MARC 21",
+      "schema:url": "https://jorol.github.io/processing-marc/#/",
+      "schema:inLanguage": "en"
+    },
+    {
+      "@id": "portfolio:marc-must-die",
+      "@type": "schema:CreativeWork",
+      "schema:name": "MARC Must Die",
+      "schema:url": "https://www.libraryjournal.com/story/marc-must-die",
+      "schema:inLanguage": "en"
+    },
+    {
+      "@id": "portfolio:marc-history-implications",
+      "@type": "schema:CreativeWork",
+      "schema:name": "MARC - Its history and implicaions",
+      "schema:url": "https://scispace.com/pdf/marc-its-history-and-implications-3q74lbh06u.pdf",
+      "schema:inLanguage": "en"
+    },
+    {
+      "@id": "portfolio:library-reference-model",
+      "@type": "schema:CreativeWork",
+      "schema:name": "IFLA Library Reference Model - A Conceptual Model for Bibliographic Information",
+      "schema:url": "https://www.ifla.org/wp-content/uploads/2019/05/assets/cataloguing/frbr-lrm/ifla-lrm-august-2017.pdf",
+      "schema:inLanguage": "en"
+    },
+    {
+      "@id": "portfolio:link-data-in-libraries",
+      "@type": "schema:CreativeWork",
+      "schema:name": "Linked Data in Libraries - A Case Study of Harvesting and Sharing Bibliographic Metadata with BIBFRAME",
+      "schema:url": "https://www.researchgate.net/publication/276102000_Linked_Data_in_Libraries_A_Case_Study_of_Harvesting_and_Sharing_Bibliographic_Metadata_with_BIBFRAME",
+      "schema:inLanguage": "en"
+    },
+    {
+      "@id": "portfolio:semantic-web",
+      "@type": "schema:CreativeWork",
+      "schema:name": "Semantic Web - Grundlagen",
+      "schema:url": "https://link.springer.com/book/10.1007/978-3-540-33994-6",
+      "schema:inLanguage": "de"
+    },
+    {
+      "@id": "portfolio:w3c-standards-and-drafts",
+      "@type": "schema:CreativeWork",
+      "schema:name": "W3C standards and drafts",
+      "schema:url": "https://www.w3.org/TR/?tags[0]=data",
+      "schema:inLanguage": "en"
+    },
+    {
+      "@id": "portfolio:semantic-web-working-ontologist",
+      "@type": "schema:CreativeWork",
+      "schema:name": "Semantic Web for the Working Ontologist - Effective Modeling in RDFS and OWL",
+      "schema:url": "https://www.sciencedirect.com/book/monograph/9780123859655/semantic-web-for-the-working-ontologist",
+      "schema:inLanguage": "en"
+    },
+    {
+      "@id": "portfolio:validating-rdf-data",
+      "@type": "schema:CreativeWork",
+      "schema:name": "Validating RDF Data",
+      "schema:url": "https://book.validatingrdf.com/",
+      "schema:inLanguage": "en"
     }
   ]
 }
