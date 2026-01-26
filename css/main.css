@@ -177,3 +177,11 @@ body {
     font-size: 0.8em;
     margin-bottom: 15px;
 }
+
+.custom-link {
+    text-decoration: none;
+}
+
+p {
+    text-align: justify;
+}

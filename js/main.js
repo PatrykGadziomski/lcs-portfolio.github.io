@@ -39,8 +39,11 @@ function processJSONLD() {
 function populateSidebar(graph) {
     const nodeList = document.getElementById('node-list');
     nodeList.innerHTML = '';
+    let i = 0;
 
     graph.forEach(node => {
+        i += 1
+
         const li = document.createElement('li');
         const name = extractName(node);
         
@@ -49,6 +52,11 @@ function populateSidebar(graph) {
         li.addEventListener('click', () => showNodeDetails(node['@id']));
         
         nodeList.appendChild(li);
+
+        if (i == 9) {
+            const hr = document.createElement('hr');
+            nodeList.appendChild(hr);
+        };
     });
 }
 
