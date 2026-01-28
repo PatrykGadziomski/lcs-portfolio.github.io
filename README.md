@@ -6,3 +6,5 @@ Here you can find my learning portfolio for the "Interfaces and Data-Formats" co
 The portfolio takes the form of a website including an interactive knowledge graph.
 
 Enjoy!
+
+--> https://patrykgadziomski.github.io/LCS-learning-portfolio.github.io/
